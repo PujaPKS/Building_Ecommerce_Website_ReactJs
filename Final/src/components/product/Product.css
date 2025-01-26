@@ -1,0 +1,43 @@
+/* Product.css */
+.product-card {
+    overflow: hidden;
+    width: 400px;
+}
+
+.card-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.card-img-container {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-direction: row;
+}
+
+.card-price {
+    text-align: left;
+    font-weight: bold;
+}
+
+.card-button {
+    text-align: right;
+    background-color: #007bff;
+    border-color: #007bff;
+}

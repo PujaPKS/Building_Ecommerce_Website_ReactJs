@@ -1,0 +1,16 @@
+.heading{
+    text-align: center;
+    text-shadow: steelblue;
+    font-size: 4rem;
+    font-weight: bolder;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.product-row{
+    width: 40%; /* Adjust width for two cards per row */
+    margin-bottom: 20px; /* Space between rows */
+}
+  
+.card-heading{
+    text-align: center;
+}

@@ -1,0 +1,18 @@
+.navbar-nav .nav-link {
+    font-size: 1.5rem; /* Adjust size as needed */
+    font-family: 'Times New Roman', Times, serif; /* Make it bold if needed */
+}
+
+.cart-icon {
+  color: white; /* Adjust the color if needed */
+  display: flex;
+  align-items: center;
+}
+
+.cart-icon:hover {
+  color: rgb(189, 219, 245); /* Change color on hover */
+}
+
+.margin{
+  margin-left: auto;
+}
