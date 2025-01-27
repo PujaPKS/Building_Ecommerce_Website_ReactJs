@@ -16,11 +16,11 @@ function App() {
   return (
     <Router>
       <Header toggleCart={toggleCart} />
-      {/* Pass both showCart and toggleCart to Cart */}
+      {/* Passed both showCart and toggleCart to Cart */}
       {showCart && <Cart showCart={showCart} toggleCart={toggleCart} />}
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/store" element={<Store />} />
+        <Route path="/store" element={<Store toggleCart={toggleCart}/>} />
         <Route path="/about" element={<About />} />
       </Routes>
       <Footer />

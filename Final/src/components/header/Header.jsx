@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Header.css';
 import { FaShoppingCart } from 'react-icons/fa';
+import CartContext from '../../context/CartContext';
 
 const Header = ({ toggleCart }) => {
+  const { cartCount } = useContext(CartContext); // Get cart count from context
   return (
     <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -16,7 +18,7 @@ const Header = ({ toggleCart }) => {
         </Nav>
         <Nav className="ms-auto"> {/* Right-aligning the cart icon */}
           <Nav.Link onClick={toggleCart} className="cart-icon mx-4">
-            <FaShoppingCart style={{ fontSize: '1.5rem' }} /> Cart
+            <FaShoppingCart style={{ fontSize: '1.5rem' }} /> Cart ({cartCount})
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>

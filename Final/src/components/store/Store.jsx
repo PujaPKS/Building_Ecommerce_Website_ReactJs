@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
 import FirstDiv from "../productDivision/FirstDiv";
 import SecondDiv from "../productDivision/SecondDiv";
 import './Store.css';
+import CartContext from "../../context/CartContext";
 
 const productsArr = [
   {
@@ -36,17 +37,19 @@ const productsArr = [
   },
 ];
 
-const Store = () => {
+const Store = ({toggleCart}) => {
+  const { addToCart } = useContext(CartContext); // Get addToCart function from context
+
   const firstHalf = productsArr.slice(0, 4);
   const secondHalf = productsArr.slice(4);
 
   return (
     <>
       <h1 className="top mt-4 pt-5 pb-5">The Generics</h1>
-      <FirstDiv products={firstHalf} />
-      <SecondDiv products={secondHalf} />
+      <FirstDiv products={firstHalf} addToCart={addToCart}/>
+      <SecondDiv products={secondHalf} addToCart={addToCart}/>
       <div>
-        <button className="finalAdd">Add to cart</button>
+        <button onClick={toggleCart} className="seeCart">See the Cart</button>
       </div>
     </>
   );

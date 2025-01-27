@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import CartContext from "./CartContext";
 
 const CartProvider = ({ children }) => {
@@ -23,13 +23,37 @@ const CartProvider = ({ children }) => {
     },
   ]);
 
+
+  // Function to add items to the cart
+  const addToCart = (item) => {
+    setCartItems((prevItems) => {
+      const existingItem = prevItems.find((cartItem) => cartItem.title === item.title);
+
+      if (existingItem) {
+        return prevItems.map((cartItem) =>
+          cartItem.title === item.title
+            ? { ...cartItem, quantity: cartItem.quantity + 1 }
+            : cartItem
+        );
+      } else {
+        return [...prevItems, { ...item, quantity: 1 }];
+      }
+    });
+  };
+
   // Function to remove an item by title
   const removeFromCart = (title) => {
     setCartItems((prevItems) => prevItems.filter((item) => item.title !== title));
   };
 
+  // Calculate total number of items in the cart
+  const cartCount = useMemo(
+    () => cartItems.reduce((total, item) => total + item.quantity, 0),
+    [cartItems]
+  );
+
   return (
-    <CartContext.Provider value={{ cartItems, removeFromCart }}>
+    <CartContext.Provider value={{ cartItems, removeFromCart, addToCart, cartCount }}>
       {children}
     </CartContext.Provider>
   );
