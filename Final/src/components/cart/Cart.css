@@ -1,103 +1,103 @@
 .cart-container {
-    position: fixed;
-    top: 60px;
-    right: 20px;
-    width: 300px;
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 16px;
-    z-index: 1000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 60px;
+  right: 20px;
+  width: 300px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-  
+
 .close-cart {
-    background: none;
-    border: none;
-    font-size: 1.2rem;
-    color: red;
-    cursor: pointer;
-    float: right;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: red;
+  cursor: pointer;
+  float: right;
 }
-  
+
 .cart-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 12px;
-  }
-  
-  .cart-item img {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    border-radius: 8px;
-  }
-  
-  .remove-btn {
-    background-color: red;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 4px;
-    cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
 }
-  
+
+.cart-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.remove-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 /* Style for the cart overlay */
 .cart-overlay {
-    position: fixed;
-    top: 0;
-    right: -100%;  /* Initially hidden off the screen */
-    width: 20%;  /* Adjust this width as needed */
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);  /* Semi-transparent background */
-    transition: right 0.3s ease-in-out; /* Smooth transition */
-    z-index: 1000; /* Make sure it's above other content */
-  }
+  position: fixed;
+  top: 0;
+  right: -100%;  /* Initially hidden off the screen */
+  width: 20%;  /* Adjust this width as needed */
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);  /* Semi-transparent background */
+  transition: right 0.3s ease-in-out; /* Smooth transition */
+  z-index: 1000; /* Make sure it's above other content */
+}
 
-  /* Style for the container inside the cart */
-  .cart-container {
-    background-color: white;
-    padding: 20px;
-    height: 60%;
-    width: 30%;
-    overflow-y: auto;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3); /* Shadow for a nicer effect */
-  }  
+/* Style for the container inside the cart */
+.cart-container {
+  background-color: white;
+  padding: 20px;
+  height: 60%;
+  width: 30%;
+  overflow-y: auto;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3); /* Shadow for a nicer effect */
+}  
 
-  /* Style for close button */
+/* Style for close button */
 .close-cart {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: red;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-  }
-  
-  .close-cart:hover {
-    background-color: darkred;
-  }
-  
-  .cart-container h2 {
-    margin-top: 0;
-  }
-  
-  .cart-container ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .cart-container li {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 0;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .cart-container img {
-    width: 8rem;
-    height: 4rem;
-  }
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.close-cart:hover {
+  background-color: darkred;
+}
+
+.cart-container h2 {
+  margin-top: 0;
+}
+
+.cart-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cart-container li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-container img {
+  width: 8rem;
+  height: 4rem;
+}

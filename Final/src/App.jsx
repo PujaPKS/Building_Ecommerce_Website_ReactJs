@@ -16,7 +16,7 @@ function App() {
   return (
     <Router>
       <Header toggleCart={toggleCart} />
-      {/* Passed both showCart and toggleCart to Cart */}
+      {/* Pass both showCart and toggleCart to Cart */}
       {showCart && <Cart showCart={showCart} toggleCart={toggleCart} />}
       <Routes>
         <Route path="/" element={<Home />} />
