@@ -6,6 +6,7 @@ import Home from "./components/home/Home";
 import Store from "./components/store/Store";
 import About from "./components/about/About";
 import Cart from "./components/cart/Cart";
+import ContactUs from "./components/contact/ContactUs";
 
 function App() {
   const [showCart, setShowCart] = useState(false);
@@ -22,6 +23,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/store" element={<Store toggleCart={toggleCart}/>} />
         <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<ContactUs />} />
       </Routes>
       <Footer />
     </Router>
