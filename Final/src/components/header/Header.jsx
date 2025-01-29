@@ -15,6 +15,7 @@ const Header = ({ toggleCart }) => {
         <Nav.Link as={Link} to="/" className="mx-3">HOME</Nav.Link>
           <Nav.Link as={Link} to="/store" className="mx-3">STORE</Nav.Link>
           <Nav.Link as={Link} to="/about" className="mx-3">ABOUT</Nav.Link>
+          <Nav.Link as={Link} to="/login" className="mx-3">LOGIN</Nav.Link>
           <Nav.Link as={Link} to="/contact" className="mx-3">CONTACT US</Nav.Link> 
         </Nav>
         <Nav className="ms-auto"> {/* Right-aligning the cart icon */}

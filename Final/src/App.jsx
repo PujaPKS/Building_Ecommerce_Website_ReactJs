@@ -8,6 +8,7 @@ import About from "./components/about/About";
 import Cart from "./components/cart/Cart";
 import ContactUs from "./components/contact/ContactUs";
 import ProductDetail from "./components/product/ProductDetail";
+import Login from "./components/login/Login";
 
 function App() {
   const [showCart, setShowCart] = useState(false);
@@ -25,6 +26,7 @@ function App() {
         <Route path="/store" element={<Store toggleCart={toggleCart}/>} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="/login" element = {<Login />} />
         <Route path="/product/:productId" element={<ProductDetail />} />
       </Routes>
       <Footer />
