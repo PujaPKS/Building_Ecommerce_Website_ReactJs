@@ -9,6 +9,7 @@ import Cart from "./components/cart/Cart";
 import ContactUs from "./components/contact/ContactUs";
 import ProductDetail from "./components/product/ProductDetail";
 import Login from "./components/login/Login";
+import ProtectedRoute from "./components/ProtectedRoute";
 
 function App() {
   const [showCart, setShowCart] = useState(false);
@@ -23,7 +24,9 @@ function App() {
       {showCart && <Cart showCart={showCart} toggleCart={toggleCart} />}
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/store" element={<Store toggleCart={toggleCart}/>} />
+        <Route path="/store" element={
+          <ProtectedRoute><Store toggleCart={toggleCart}/></ProtectedRoute>}  //when user is logged in then only store page opens
+        /> 
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/login" element = {<Login />} />
