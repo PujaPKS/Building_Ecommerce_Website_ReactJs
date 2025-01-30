@@ -10,6 +10,10 @@ const Cart = ({ showCart, toggleCart }) => {
     return <div>Your cart is empty!</div>;
   }
 
+  // Calculated total items count and total price
+  const totalItems = cartItems.reduce((total, item) => total + item.quantity, 0);
+  const totalPrice = cartItems.reduce((total, item) => total + item.price * item.quantity, 0).toFixed(2); // Rounded to 2 decimals
+
   return (
     <div className={`cart-overlay ${showCart ? "open" : ""}`}>
       <div className="cart-container">
@@ -26,6 +30,10 @@ const Cart = ({ showCart, toggleCart }) => {
               <button onClick={() => removeFromCart(item.title)}>Remove</button>
             </li>
           ))}
+          <li className="cart-summary">
+            <div>Total Items: {totalItems}</div>
+            <div>Total Price: ${totalPrice}</div>
+          </li>
         </ul>
       </div>
     </div>

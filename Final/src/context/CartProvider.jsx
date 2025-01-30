@@ -6,9 +6,8 @@ const CartProvider = ({ children }) => {
   const { email } = useContext(AuthContext); // Get the logged-in user's email
   const [cartItems, setCartItems] = useState([]);
 
-  // Generate the API URL with email as part of the route
+  // Generated the API URL with email as part of the route
   const userEndpoint = email ? email.replace(/[@.]/g, "") : "";
-  //add a new crudcrud api as it expires after 24hrs or 100 function implementation
   const apiUrl = `https://crudcrud.com/api/418e882dd0874cad91335e74cb4f5689/cart${userEndpoint}`;
 
   // Function to fetch cart items from API when the user opens the cart
@@ -91,6 +90,16 @@ const CartProvider = ({ children }) => {
         (total, item) => total + (item.quantity && !isNaN(item.quantity) ? item.quantity : 0),
         0
       ),
+    [cartItems]
+  );
+
+   // Calculated total price of items in the cart
+   const totalPrice = useMemo(
+    () =>
+      cartItems.reduce(
+        (total, item) => total + (item.price * (item.quantity || 0)),
+        0
+      ).toFixed(2), // To format the total price to 2 decimal places
     [cartItems]
   );
 

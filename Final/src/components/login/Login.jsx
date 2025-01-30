@@ -7,6 +7,9 @@ import './Login.css';
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  //set up context for authentication so that we can see and tell which user is present in the firebase 
+  // const [email, setEmail] = useState('sam@gmail.com');
+  // const [password, setPassword] = useState('123456789');
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
