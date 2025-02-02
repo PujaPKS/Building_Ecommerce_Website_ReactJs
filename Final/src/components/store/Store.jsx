@@ -19,7 +19,7 @@ const productsArr = [
   },
   {
     id: 3,
-    title: "Yellow and Black Colors",
+    title: "Yellow and black Color",
     price: 70,
     imageUrl: "https://prasadyash2411.github.io/ecom-website/img/Album%203.png",
   },
@@ -51,7 +51,7 @@ const Store = ({toggleCart}) => {
 
   return (
     <>
-      <h1 className="top mt-4 pt-5 pb-5">The Generics</h1>
+      <h1 className="top mt-2 pt-5 pb-3">The Generics</h1>
       <FirstDiv products={firstHalf} addToCart={addToCart}/>
       <SecondDiv products={secondHalf} addToCart={addToCart}/>
       <div>

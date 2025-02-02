@@ -19,7 +19,7 @@ const Cart = ({ showCart, toggleCart }) => {
       <div className="cart-container">
         {/* Close button to toggle cart visibility */}
         <button className="close-cart" onClick={toggleCart}>X</button>
-        <h2>Your Cart</h2>
+        <h4>Your Cart</h4>
         <ul>
           {cartItems.map((item) => (
             <li key={item.title}>

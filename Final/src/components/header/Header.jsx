@@ -12,15 +12,15 @@ const Header = ({ toggleCart }) => {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="margin"> {/* Centering the Nav using mx-auto */}
-        <Nav.Link as={Link} to="/" className="mx-3">HOME</Nav.Link>
-          <Nav.Link as={Link} to="/store" className="mx-3">STORE</Nav.Link>
-          <Nav.Link as={Link} to="/about" className="mx-3">ABOUT</Nav.Link>
-          <Nav.Link as={Link} to="/login" className="mx-3">LOGIN</Nav.Link>
-          <Nav.Link as={Link} to="/contact" className="mx-3">CONTACT US</Nav.Link> 
+        <Nav.Link as={Link} to="/" className="mx-1">HOME</Nav.Link>
+          <Nav.Link as={Link} to="/store" className="mx-1">STORE</Nav.Link>
+          <Nav.Link as={Link} to="/about" className="mx-1">ABOUT</Nav.Link>
+          <Nav.Link as={Link} to="/login" className="mx-1">LOGIN</Nav.Link>
+          <Nav.Link as={Link} to="/contact" className="mx-1">CONTACT US</Nav.Link> 
         </Nav>
         <Nav className="ms-auto"> {/* Right-aligning the cart icon */}
           <Nav.Link onClick={toggleCart} className="cart-icon mx-4">
-            <FaShoppingCart style={{ fontSize: '1.5rem' }} /> Cart ({cartCount})
+            <FaShoppingCart style={{ fontSize: '1.4rem' }} /> Cart ({cartCount})
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>

@@ -86,7 +86,7 @@ const Login = () => {
             placeholder="Enter your password"
           />
         </div>
-        <button type="submit" disabled={isLoading}>
+        <button type="submit" className='add' disabled={isLoading}>
           {isLoading ? 'Logging in...' : 'Login'}
         </button>
       </form>

@@ -7,7 +7,7 @@ const FirstDiv = ({ products, addToCart }) => {
     return (
       <div className="container mt-0">
         <h2 className="heading">Music</h2>
-        <div className="d-flex -flex-row justify-content-center align-items-center flex-wrap">
+        <div className="custom-margin d-flex -flex-row justify-content-center align-items-center flex-wrap ">
           {products.map((product) => (
             <div className="product-row" key={product.id}>
               <Link to={`/product/${product.id}`} style={{ textDecoration: "none", color: "inherit" }} >

@@ -8,7 +8,7 @@ const CartProvider = ({ children }) => {
 
   // Generated the API URL with email as part of the route
   const userEndpoint = email ? email.replace(/[@.]/g, "") : "";
-  const apiUrl = `https://crudcrud.com/api/418e882dd0874cad91335e74cb4f5689/cart${userEndpoint}`;
+  const apiUrl = `https://crudcrud.com/api/a542859d93e74767bb3a53adda43c3ac/cart${userEndpoint}`;
 
   // Function to fetch cart items from API when the user opens the cart
   const fetchCartItems = async () => {

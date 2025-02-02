@@ -8,17 +8,17 @@
 
 .top {
   text-align: center;
-  font: 6rem 'Times New Roman', Times, serif;
+  font: 3rem 'Times New Roman', Times, serif;
   background-color: gray;
   color: white;
 }
 
 .seeCart{
   text-align: center;
-  font: 3rem 'Times New Roman', Times, serif;
+  font: 1.4rem 'Times New Roman', Times, serif;
   background-color: lightblue;
   display: block;
-  margin: 20px auto; /* This centers the button horizontally */
+  margin: 20px auto;
   border-radius: 20px;
   cursor: pointer;
 }

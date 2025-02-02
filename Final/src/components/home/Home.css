@@ -2,13 +2,14 @@
   background-color: #686e73; /* Gray background */
   color: #fff;
   text-align: center;
-  padding: 6rem 1rem;
+  padding: 2rem 1rem;
+  margin-top: 1.6rem;
 }
 
 .hero-title {
-  font-size: 6rem;
+  font-size: 3rem;
   font-family: "Georgia", serif;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
   font-weight: bold;
 }
 
@@ -16,11 +17,11 @@
   background-color: transparent;
   color: #00bfff;
   border: 2px solid #00bfff;
-  padding: 0.5rem 2rem;
-  font-size: 1.25rem;
+  padding: 0.4rem 1rem;
+  font-size: 1.2rem;
   font-weight: bold;
   text-transform: uppercase;
-  border-radius: 5px;
+  border-radius: 4px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -37,9 +38,9 @@
   display: block;
   border: 2px solid #56CCF2;
   border-radius: 50%;
-  padding: 20px;
-  font-size: 30px;
-  font-weight: 200;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 100;
   margin: 20px auto;
   background: inherit;
   color: #56CCF2;
@@ -57,13 +58,13 @@
 }
 
 .tours-title {
-  font-size: 3rem;
+  font-size: 2.4rem;
   font-family: "Georgia", serif;
   margin-bottom: 2rem;
 }
 
 .tours-table {
-  max-width: 50%;
+  max-width: 60%;
   margin: 0 auto;
 }
 
@@ -80,7 +81,7 @@
 .tour-venue {
   flex: 1;
   text-align: left;
-  font-size: 1.4rem;
+  font-size: 0.8rem;
   font-family:'Times New Roman', Times, serif;
 }
 
@@ -89,7 +90,7 @@
   color: #fff;
   border: none;
   padding: 0.5rem 1rem;
-  font-size: 1.4rem;
+  font-size: 0.8rem;
   border-radius: 5px;
   cursor: pointer;
   text-transform: uppercase;

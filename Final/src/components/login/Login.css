@@ -1,15 +1,16 @@
 .login-container{
     max-width: 400px;
     margin: 100px auto;
-    padding: 20px;
+    padding: 16px;
     background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 120px;
 }
   
 h2 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
   
 .form-group {
@@ -18,14 +19,14 @@ h2 {
   
 label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
     font-weight: bold;
 }
   
 input {
     width: 100%;
-    padding: 8px;
-    margin-top: 5px;
+    padding: 4px;
+    margin-top: 4px;
     border-radius: 4px;
     border: 1px solid #ccc;
 }
@@ -34,5 +35,11 @@ input {
     color: red;
     text-align: center;
     margin-bottom: 15px;
+}
+
+.add {
+    background-color: rgb(83, 83, 234);
+    color: white;
+    border-color: rgb(83, 83, 234);
 }
   

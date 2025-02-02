@@ -1,21 +1,26 @@
 .cart-container {
   position: fixed;
   top: 60px;
-  right: 20px;
-  width: 300px;
+  right: 2px;
+  width: 36%;
+  height: 54%;
   background-color: white;
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 16px;
   z-index: 1000;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+  overflow-y: auto;
 }
 
 .close-cart {
-  background: none;
+  position: absolute;
+  background-color: red;
   border: none;
-  font-size: 1.2rem;
-  color: red;
+  font-size: 0.9rem;
+  top: 10px;
+  right: 10px;
+  color: white;
   cursor: pointer;
   float: right;
 }
@@ -28,8 +33,8 @@
 }
 
 .cart-item img {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 40px;
   object-fit: cover;
   border-radius: 8px;
 }
@@ -38,7 +43,7 @@
   background-color: red;
   color: white;
   border: none;
-  padding: 5px 10px;
+  padding: 4px 6px;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -53,28 +58,6 @@
   background-color: rgba(0, 0, 0, 0.7);  /* Semi-transparent background */
   transition: right 0.3s ease-in-out; /* Smooth transition */
   z-index: 1000; /* Make sure it's above other content */
-}
-
-/* Style for the container inside the cart */
-.cart-container {
-  background-color: white;
-  padding: 20px;
-  height: 60%;
-  width: 30%;
-  overflow-y: auto;
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3); /* Shadow for a nicer effect */
-}  
-
-/* Style for close button */
-.close-cart {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background-color: red;
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
 }
 
 .close-cart:hover {
@@ -93,11 +76,6 @@
 .cart-container li {
   display: flex;
   justify-content: space-between;
-  padding: 10px 0;
+  padding: 5px 0;
   border-bottom: 1px solid #ddd;
-}
-
-.cart-container img {
-  width: 8rem;
-  height: 4rem;
 }
